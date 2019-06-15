@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wyl.nestedscrolling.NestedScrollingContainer
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/nestedScrollingContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+    <android.support.v4.widget.NestedScrollView
+            android:id="@+id/nestedScrollingView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ImageView
+                android:id="@+id/ivLauncher"
+                android:layout_width="match_parent"
+                android:layout_height="360dp"
+                android:src="@mipmap/ic_launcher"/>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <com.wyl.nestedscrolling.NestedScrollingWebView
+            android:id="@+id/nestedScrollingWebView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <ImageView
+            android:id="@+id/iv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    <LinearLayout
+            android:id="@+id/ll"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+                android:id="@+id/tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        <EditText
+                android:id="@+id/et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+</com.wyl.nestedscrolling.NestedScrollingContainer>
