@@ -35,7 +35,8 @@ class NestedScrollingContainer(context: Context?, attrs: AttributeSet?) : Linear
 
     private lateinit var viewList: ArrayList<View>
 
-    init {
+    override fun onFinishInflate() {
+        super.onFinishInflate()
         nestedScrollView = findViewById(R.id.nestedScrollingView)
         nestedScrollingWebView = findViewById(R.id.nestedScrollingWebView)
         iv = findViewById(R.id.iv)
